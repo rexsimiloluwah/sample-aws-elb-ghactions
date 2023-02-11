@@ -23,7 +23,7 @@ jobs:
 
       - name: Init EB CLI 
         run: |
-          eb init --platform node.js-16 --region ${{ secrets.AWS_REGION  }}
+          eb init awseb-ghactions-app --platform node.js-16 --region ${{ secrets.AWS_REGION  }}
       
       - name: Deploy to Elastic beanstalk
         run: |
